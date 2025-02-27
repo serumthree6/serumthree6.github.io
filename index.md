@@ -2,8 +2,12 @@
 layout: default
 ---
 
-# _TBD_
+# _Work in Progress..._
 
-Last Updated, Nov 2024. 
-Currently working on another bigger project.
+Last Updated, Feb 27 2025. 
+Currently working on finishing this, gathering data in process.
+
+## Projects, Courses, etc. 
+
+-[Kibana](kibana.html)
 
