@@ -25,7 +25,7 @@ This project focuses on Security Information and Event Management (SIEM) and thr
 - Admin Logon Not From PAW
 - SSH Logins
 
-![Threat Hunting Visualization](assets/images/elatic_stack_2.png)
+![Threat Hunting Visualization](assets/images/elastic_stack_2.png)
 ### **Thought Process & Solution Approach**  
 
 For each hunt, I would take a structured approach, leveraging the **MITRE ATT&CK framework** to guide my investigation. Since we are using the **Elastic Stack as a SIEM**, I will use Kibana’s **Discover** feature and **KQL queries** to filter logs from **Windows Audit Logs, Sysmon, PowerShell logs, and Zeek logs**.  
