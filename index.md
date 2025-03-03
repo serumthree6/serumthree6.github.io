@@ -2,12 +2,11 @@
 layout: default
 ---
 
-# _Work in Progress..._
+# _Portfolio is constantly being updated_
 
-Last Updated, Feb 27 2025. 
-Currently working on finishing this, gathering data in process.
+Last Updated, Mar 3 2025. 
 
-## Projects, Courses, etc. 
+## Project, Courses, Tools, Tasks, etc. 
 
--[Kibana](kibana.html)
+#-[Elastic Stack](elastic_stack.html)
 
