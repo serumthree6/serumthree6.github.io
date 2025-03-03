@@ -14,4 +14,4 @@ Thanks for checking out my CV and portfolio. I decided to create this "page" to 
 -[Splunk]
 -[Suricata]
 -[Active Directory Common Attacks]
--And more
+And more
