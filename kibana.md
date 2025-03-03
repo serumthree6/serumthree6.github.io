@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Kibana Project
+title: Elastic Stack
 ---
-
-# Kibana Project
+[Back to Portfolio](index.html)
+# Elastic Stack
 
 This project focuses on Security Information and Event Management (SIEM) and threat hunting using the Elastic Stack. It covers the role of a Security Operations Center (SOC), SIEM query development with KQL, and the application of the MITRE ATT&CK framework. Additionally, it explores the fundamentals of Cyber Threat Intelligence (CTI), risk assessment, and incident handling. The project includes hands-on threat hunting exercises with real-world logs, enabling the development of SIEM use cases and visualizations for effective security monitoring.
 
@@ -24,5 +24,3 @@ This project focuses on Security Information and Event Management (SIEM) and thr
 - Failed Logon Attempts (Admin Users Only)
 - Admin Logon Not From PAW
 - SSH Logins
-
-[Back to Portfolio](index.html)
