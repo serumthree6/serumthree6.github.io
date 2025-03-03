@@ -10,8 +10,8 @@ Thanks for checking out my CV and portfolio. I decided to create this "page" to 
 ### [Elastic Stack](elastic_stack.html)
 
 ## TBD - To be done soon :) 
-[Windows Event Log]
-[Splunk]
-[Suricata]
-[Active Directory Common Attacks]
-And more
+-[Windows Event Log]
+-[Splunk]
+-[Suricata]
+-[Active Directory Common Attacks]
+-And more
