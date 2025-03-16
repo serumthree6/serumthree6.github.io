@@ -7,10 +7,11 @@ Thanks for checking out my CV and portfolio. I decided to create this "page" to 
 
 ## Project, Courses, Tools, Tasks, etc. 
 
-### [Elastic Stack](elastic_stack.html)
+### [Elastic Stack](elasticStack.html)
+### [Windows Event Viewer](windowsEventViewer.html)
 
 ## TBD - To be done soon :) 
--[Windows Event Log]
+
 -[Splunk]
 -[Suricata]
 -[Active Directory Common Attacks]
