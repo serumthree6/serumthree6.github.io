@@ -9,6 +9,14 @@ In this project, I analyze Windows Event Viewer logs to detect suspicious activi
 
 Each analysis involves filtering event logs for specific Event IDs, correlating process behavior, and identifying anomalies using known attack techniques.
 
+## Key Features:
+- **Windows Event Analysis** – Examining Windows Event Viewer logs for security threats
+- **Event ID Analysis** – Filtering and analyzing specific Event IDs for suspicious activity
+- **Process Investigation** – Analyzing process creation and behavior patterns
+- **Security Threat Detection** – Identifying potential security threats through log analysis
+- **Hands-On Investigation** – Conducting detailed forensic analysis of Windows logs
+- **Threat Hunting** – Using Windows Event Viewer to detect and analyze security threats
+
 ---
 
 ## **Analysis 1: Detecting DLL Hijacking**
@@ -18,7 +26,7 @@ Each analysis involves filtering event logs for specific Event IDs, correlating 
 **Answer:** `Dism.exe`
 
 ### **Investigation Approach:**
-- I examined the logs in `C:\Logs\DLLHijack` and found that `DismCore.dll` was not digitally signed (`Signed: false`).
+- I examined the logs in `C:\Logs\DLLHijack` and filtered for **Event ID 7** and `false` value for `Signed` attribute using XML Query. I found that `DismCore.dll` was not digitally signed (`Signed: false`).
 - A missing digital signature indicates the file's integrity cannot be verified, making it a prime target for DLL hijacking.
 - Since `Dism.exe` loaded the unsigned DLL, it was the process responsible for executing the DLL hijacking attack.
 
@@ -33,7 +41,7 @@ Each analysis involves filtering event logs for specific Event IDs, correlating 
 **Answer:** `Calculator.exe`
 
 ### **Investigation Approach:**
-- I opened the `PowershellExec` log file in Event Viewer and filtered for **Event ID 7**.
+- I opened the `PowershellExec` log file in Event Viewer and filtered for **Event ID 7** and `clr.dll`, `clrjit.dll` values related to OriginalFileName attribute.
 - I looked for the presence of `clr.dll` and `clrjit.dll`, which indicate unmanaged PowerShell execution.
 - These DLLs are part of the .NET runtime, and their unexpected presence in `Calculator.exe` suggests the execution of unmanaged PowerShell code.
 
