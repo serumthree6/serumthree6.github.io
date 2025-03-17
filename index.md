@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-#### _Portfolio is constantly being updated_ - Last Updated, Mar 17 2025. 
+#### _Portfolio is constantly being updated_ - Last Update: _Mar_ _17_ _2025_. 
 # Welcome to my Portfolio
 Thanks for checking out my CV and portfolio. I decided to create this "page" to more easily show my knowledge of tools, my thought process, and to not overload my CV.
 
@@ -12,7 +12,7 @@ Thanks for checking out my CV and portfolio. I decided to create this "page" to 
 
 ## TBD - To be done soon :) 
 
--[Splunk]
+-[Splunk] 
 -[Suricata]
 -[Active Directory Common Attacks]
-And more
+and More
