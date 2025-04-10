@@ -2,7 +2,7 @@
 layout: default
 title: Windows Attacks & Defense
 ---
-[Back to Main Page](index.html)
+[Back to Main Page](/)
 # Windows Attacks & Defense
 
 ### [Kerberoast](docs/windowsAttacks-Defense/Kerberoast/kerberoast.md)

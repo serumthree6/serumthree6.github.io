@@ -2,8 +2,8 @@
 layout: default
 title: Windows Attacks & Defense - AS-REProast
 ---
-[Back to Main Page](index.html)
-[Back to Previous Page](docs/windowsAttacks-Defense/windowsAttacks&Defense.html)
+[Back to Main Page](/)
+[Back to Previous Page](../windowsAttacks&Defense.html)
 # Windows Attacks & Defense - AS-REProast
 
 (images/windowsAttacks-Defense/AS-REProast/as-repRoast_1.png)
