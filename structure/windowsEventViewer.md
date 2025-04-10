@@ -2,7 +2,7 @@
 layout: default
 title: Windows Event Viewer
 ---
-[Back to Portfolio](index.html)
+[Back to Main Page](index.html)
 # Windows Event Viewer
 
 In this project, I analyze Windows Event Viewer logs to detect suspicious activity and identify potential security threats. By examining log files from different directories, I uncover malicious behavior such as DLL hijacking, process injection, LSASS dumping, and unusual parent-child relationships between processes.
