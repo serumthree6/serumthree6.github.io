@@ -7,14 +7,14 @@ Thanks for checking out my CV and portfolio. I decided to create this "page" to 
 
 ## Project, Courses, Tools, Tasks, etc. 
 
-### [Elastic Stack](elasticStack.html)
-### [Windows Event Viewer](windowsEventViewer.html)
-### [Windows Attacks & Defense](index-windowsAttacks-Defense.html)
+### [Elastic Stack](docs/elasticStack.html)
+### [Windows Event Viewer](docs/windowsEventViewer.html)
+### [Windows Attacks & Defense](docs/windowsAttacks-Defense/index-windowsAttacks-Defense.html)
 
 ## TBD - To be done soon :) 
 
--[Splunk] 
--[Suricata]
--[Malware_Analysis]
--[Yara&Sigma]
--[and_More]
+### -[Splunk] 
+### -[Suricata]
+### -[Malware Analysis]
+### -[Yara & Sigma]
+### and More
