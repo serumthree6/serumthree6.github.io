@@ -7,9 +7,9 @@ Thanks for checking out my CV and portfolio. I decided to create this "page" to 
 
 ## Project, Courses, Tools, Tasks, etc. 
 
-### [Elastic Stack](assets/modules/elasticStack.html)
-### [Windows Event Viewer](assets/modules/windowsEventViewer.html)
-### [Windows Attacks & Defense](assets/modules/windowsAttacks-Defense/index-windowsAttacks-Defense.html)
+### [Elastic Stack](docs/elasticStack.html)
+### [Windows Event Viewer](docs/windowsEventViewer.html)
+### [Windows Attacks & Defense](docs/windowsAttacks-Defense/index-windowsAttacks-Defense.html)
 
 ## TBD - To be done soon :) 
 

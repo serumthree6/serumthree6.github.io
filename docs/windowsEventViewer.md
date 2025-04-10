@@ -30,8 +30,8 @@ Each analysis involves filtering event logs for specific Event IDs, correlating 
 - A missing digital signature indicates the file's integrity cannot be verified, making it a prime target for DLL hijacking.
 - Since `Dism.exe` loaded the unsigned DLL, it was the process responsible for executing the DLL hijacking attack.
 
-![Analysis 1:](assets/images/winEventViewer/winEventViewer_1.png)
-![Analysis 1_2:](assets/images/winEventViewer/winEventViewer_1_2.png)
+![Analysis 1:](images/winEventViewer/winEventViewer_1.png)
+![Analysis 1_2:](images/winEventViewer/winEventViewer_1_2.png)
 ---
 
 ## **Analysis 2: Detecting Unmanaged PowerShell Execution**
@@ -45,8 +45,8 @@ Each analysis involves filtering event logs for specific Event IDs, correlating 
 - I looked for the presence of `clr.dll` and `clrjit.dll`, which indicate unmanaged PowerShell execution.
 - These DLLs are part of the .NET runtime, and their unexpected presence in `Calculator.exe` suggests the execution of unmanaged PowerShell code.
 
-![Analysis 2:](assets/images/winEventViewer/winEventViewer_2.png)
-![Analysis 2_2:](assets/images/winEventViewer/winEventViewer_2_2.png)
+![Analysis 2:](images/winEventViewer/winEventViewer_2.png)
+![Analysis 2_2:](images/winEventViewer/winEventViewer_2_2.png)
 ---
 
 ## **Analysis 3: Detecting Process Injection**
@@ -60,7 +60,7 @@ Each analysis involves filtering event logs for specific Event IDs, correlating 
 - I specifically searched for the `CreateRemoteThread` API call, which is commonly used in process injection attacks.
 - The logs indicated that `rundll32.exe` injected code into `Calculator.exe`, confirming its role in the attack.
 
-![Analysis 3:](assets/images/winEventViewer/winEventViewer_3.png)
+![Analysis 3:](images/winEventViewer/winEventViewer_3.png)
 ---
 
 ## **Analysis 4: Detecting LSASS Dumping**
@@ -74,7 +74,7 @@ Each analysis involves filtering event logs for specific Event IDs, correlating 
 - I focused on logs where the **TargetImage** was `C:\Windows\System32\lsass.exe`.
 - The logs showed that `ProcessHacker.exe` accessed LSASS with an **access mask of 0x1400**, indicating an attempt to dump memory.
 
-![Analysis 4:](assets/images/winEventViewer/winEventViewer_4.png)
+![Analysis 4:](images/winEventViewer/winEventViewer_4.png)
 ---
 
 ## **Analysis 5: Detecting Post-LSASS Dump Login Attempts**
@@ -88,7 +88,7 @@ Each analysis involves filtering event logs for specific Event IDs, correlating 
 - I focused on **Logon Types 2 (Interactive) and 10 (RemoteInteractive)**.
 - By correlating login events with the timestamp of the LSASS dump, I found no evidence of unauthorized logins after the dump.
 
-![Analysis 5:](assets/images/winEventViewer/winEventViewer_5.png)
+![Analysis 5:](images/winEventViewer/winEventViewer_5.png)
 ---
 
 ## **Analysis 6: Detecting Unusual Parent-Child Process Relationships**
@@ -102,7 +102,7 @@ Each analysis involves filtering event logs for specific Event IDs, correlating 
 - The logs showed that `WerFault.exe`, typically used for Windows error reporting, unexpectedly launched `cmd.exe`.
 - This behavior suggests that `WerFault.exe` was abused to execute malicious code in an attempt to bypass security controls.
 
-![Analysis 6:](assets/images/winEventViewer/winEventViewer_6.png)
+![Analysis 6:](images/winEventViewer/winEventViewer_6.png)
 ---
 
 Through these investigations, I leveraged Windows Event Viewer logs to detect security threats and analyze adversarial techniques. By understanding process execution, event correlation, and attacker behavior, I was able to uncover key indicators of compromise (IOCs) and gain insights into potential threats
